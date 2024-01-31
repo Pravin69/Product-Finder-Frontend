@@ -10,6 +10,7 @@ const fetchAllProducts = async (offset = 0, keyword = null) => {
   // console.log(queryString);
 
   try {
+    console.log(BASE_URL + queryString);
     const res = await fetch(BASE_URL + queryString);
     const data = await res.json();
     return data;
